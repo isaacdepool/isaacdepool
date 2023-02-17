@@ -21,8 +21,8 @@ export default function Navbar({
     return (
             <div className="container-fluid h-100">
               <div className="row h-100">
-                  <Aside className="col-12 p-0 navbar-light fixed-top">
-                    <Nav expand="md" className="shadow py-3 align-items-start px-md-5">
+                  <Aside className="col-12 p-0 fixed-top">
+                    <Nav expand="md" className="shadow navbar-dark py-2 align-items-start px-md-5">
                       <CContainer fluid className="py-0 py-xl-2 px-0 px-lg-4">
                         <div className="d-flex align-items-center mb-0 mb-lg-0">
                           <CNavbarBrand href="#" className="d-block pe-0 ps-4 ps-lg-0">
@@ -35,7 +35,7 @@ export default function Navbar({
                             <h5 className="mt-2">ISAAC DEPOOL</h5>
                         </div>
 
-                      <div className="pe-3 ps-3 mb-3 mb-lg-0">
+                      <div className="px-3 my-2 mb-lg-0">
                       <CNavbarToggler 
                         className="p-2 p-lg-0 shadow-none" 
                         onClick={() => setVisible(!visible)} 

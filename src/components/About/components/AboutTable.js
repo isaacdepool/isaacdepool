@@ -113,6 +113,7 @@ const Content = styled.div`
 
  .box{
     border: solid 1px #fff;
+    border-style: dashed;
     min-height: 310px;
     padding: 45px 20px;
     margin: 10px;

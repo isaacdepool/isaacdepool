@@ -17,6 +17,6 @@ export const HomeScreen = () => {
 }
 
 const Container = styled.div`
-  margin: 75px auto;
+  margin: 60px auto;
   margin-bottom: 0;
 `

@@ -26,6 +26,10 @@
     transform: translateY(-5px);
 }
 
+.navbar-toggler {
+    border: var(--cui-border-width) solid rgba(253, 253, 253, 0.771) !important;
+}
+
 @keyframes progress-indef {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(-90deg); }
