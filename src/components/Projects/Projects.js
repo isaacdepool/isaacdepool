@@ -11,5 +11,5 @@ export const Projects = () => {
 
 const Content = styled.div`
   min-height: 100vh;
-background-color: grey
+background-color: #1E1F20
 `

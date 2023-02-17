@@ -14,7 +14,7 @@ export const AboutTable = () => {
                 <div className='box'>
                     <div className='d-flex align-items-center'>
                         <img
-                            className='me-3 mt-0 d-flex'
+                            className='me-3 mt-0 d-flex cursor-pointer circle'
                             src={reactNativeIcon}
                             alt="React"
                             height="50px"
@@ -36,7 +36,7 @@ export const AboutTable = () => {
                 <div className='box'>
                     <div className='d-flex align-items-center'>
                         <img
-                            className='me-3 mt-0 d-flex'
+                            className='me-3 mt-0 d-flex cursor-pointer circle-infinte'
                             src={reactIcon}
                             alt="React"
                             height="50px"
@@ -58,7 +58,7 @@ export const AboutTable = () => {
                 <div className='box'>
                     <div className='d-flex align-items-center'>
                         <img
-                            className='me-3 mt-0 d-flex'
+                            className='me-3 mt-0 d-flex cursor-pointer'
                             src={moniIcon}
                             alt="React"
                             height="50px"
@@ -90,6 +90,26 @@ export const AboutTable = () => {
 }
 
 const Content = styled.div`
+
+ .circle {
+    stroke: #000;
+    stroke-width: 4;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 65;
+    animation: progress-indef 5s ease-in-out infinite;
+    transform-origin: 50% 50%;
+    stroke-dashoffset: 250.92135620117188;
+  }
+
+  .circle-infinte {
+    stroke: #000;
+    stroke-width: 4;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 65;
+    animation: progress-circle 5s linear infinite;
+    transform-origin: 50% 50%;
+    stroke-dashoffset: 250.92135620117188;
+  }
 
  .box{
     border: solid 1px #fff;
