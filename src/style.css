@@ -1,0 +1,27 @@
+/* Colors  */
+.color-white{
+    color: #fff !important
+}
+.color-black{
+    color: #000 !important
+}
+
+/* BackGround  */
+.bg-red{
+    background-color: #e63946 !important;
+}
+
+.btn-general{
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+    transition: transform .3s;
+}
+
+.btn-general:hover {
+    transform: translateY(-5px);
+}
