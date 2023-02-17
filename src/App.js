@@ -9,7 +9,7 @@ function App() {
     <>
     <Navbar/>
     <Routes>
-      <Route path='/'
+      <Route path='/isaacdepool'
       element={
         <HomeScreen/>
       }
