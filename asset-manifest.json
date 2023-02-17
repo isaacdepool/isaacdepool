@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/isaacdepool/static/css/main.eb4e90cb.css",
-    "main.js": "/isaacdepool/static/js/main.1847eead.js",
+    "main.css": "/isaacdepool/static/css/main.4cf4962f.css",
+    "main.js": "/isaacdepool/static/js/main.1f6b7261.js",
     "static/js/787.9d879b67.chunk.js": "/isaacdepool/static/js/787.9d879b67.chunk.js",
     "static/media/comillas.png": "/isaacdepool/static/media/comillas.bdbdb9d8e806cf68481c.png",
     "static/media/react-native.svg": "/isaacdepool/static/media/react-native.a96de46657e8299049a9034095ceb8e1.svg",
     "static/media/logo.svg": "/isaacdepool/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/endless-constellation.svg": "/isaacdepool/static/media/endless-constellation.51c9f6060ecd027e2d04314196e124b2.svg",
     "static/media/computer-tv-svgrepo-com.svg": "/isaacdepool/static/media/computer-tv-svgrepo-com.a8777d29c74eee2359eaaccd2583cfb4.svg",
     "static/media/bg-home.svg": "/isaacdepool/static/media/bg-home.3c0330d9bf36ea941cf79d6e2451333c.svg",
     "index.html": "/isaacdepool/index.html",
     "static/media/React-icon.svg": "/isaacdepool/static/media/React-icon.3a03708e42481565259f85329d20b695.svg",
-    "main.eb4e90cb.css.map": "/isaacdepool/static/css/main.eb4e90cb.css.map",
-    "main.1847eead.js.map": "/isaacdepool/static/js/main.1847eead.js.map",
+    "main.4cf4962f.css.map": "/isaacdepool/static/css/main.4cf4962f.css.map",
+    "main.1f6b7261.js.map": "/isaacdepool/static/js/main.1f6b7261.js.map",
     "787.9d879b67.chunk.js.map": "/isaacdepool/static/js/787.9d879b67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb4e90cb.css",
-    "static/js/main.1847eead.js"
+    "static/css/main.4cf4962f.css",
+    "static/js/main.1f6b7261.js"
   ]
 }
