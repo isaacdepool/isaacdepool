@@ -11,7 +11,7 @@ export const Home = () => {
       // style={{ backgroundImage: `url(${bgSVG})`}}
       >   
         <h1 className='text-center fw-bold font-size-primary color-white'>HELLO, I'M ISAAC DEPOOL</h1>
-        <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.</h2>
+        <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Computer Engineer specialized in the FrontEnd in Web and Mobile development.</h2>
 
         <div className='text-center cursor-pointer'>
           <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
@@ -23,7 +23,7 @@ export const Home = () => {
 
 const Content = styled.div`
 .present{
-  height: 92vh;
+  height: 100vh;
   align-content: center;
   align-items: center;
   display: grid;
