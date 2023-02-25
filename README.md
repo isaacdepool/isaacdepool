@@ -10,3 +10,10 @@
 
 ## Back-End 
 [![My Skills](https://skillicons.dev/icons?i=mysql,nodejs)](https://skillicons.dev)
+
+<!-- ## GitHub Status
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=isaacdepool&hide=contribs,prs&theme=radical) -->
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="right" src="https://github-readme-stats.vercel.app/api?username=isaacdepool&hide=contribs,prs&theme=radical" />
+</a>
