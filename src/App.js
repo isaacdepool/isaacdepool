@@ -11,7 +11,9 @@ function App() {
     <Routes>
       <Route path='/isaacdepool'
       element={
-        <HomeScreen/>
+        <HomeScreen
+        executeScroll
+        />
       }
       />
     </Routes>

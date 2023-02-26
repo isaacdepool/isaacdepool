@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Projects = ({data}) => {
   return (
     <Content>
-        <div>Projects</div>
+        <div id="projects">Projects</div>
         <div>{data?.name}</div>
     </Content>
   )

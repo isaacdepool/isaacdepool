@@ -1,13 +1,14 @@
 import React from 'react'
 import '../../style.css';
 import styled from 'styled-components';
+import {Link} from 'react-scroll'
 
 import avatarAnimated from '../../assets/avatar-hi.gif';
 
 export const Home = () => {
   return (
     <Content>
-      <div className='present'
+      <div id="home" className='present'
       >  
       <dvi className="content-title">
         <div className='p-relative'>
@@ -17,10 +18,13 @@ export const Home = () => {
           /> 
           <h1 className='text-center fw-bold font-size-primary color-white'>HELLO, I'M ISAAC DEPOOL</h1>
         </div>
-          <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Computer Engineer specialized in the FrontEnd in Web and Mobile development.</h2>
+          <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Computer Engineer specialized in FrontEnd Web and Mobile development.</h2>
 
           <div className='text-center cursor-pointer'>
+          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={200}
+          >
             <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
+          </Link>
           </div>
       </dvi>
       </div>
@@ -61,9 +65,9 @@ const Content = styled.div`
    }  
 
    .avatar{
-    width: 100px;
-    height: 100px;
-    left: 0;
+    width: 40vw;
+    height: 40vw;
+    left: -5vw;
    }
 }
 `

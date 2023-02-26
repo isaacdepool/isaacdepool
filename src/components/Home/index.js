@@ -5,7 +5,8 @@ import { ContactScreen } from '../Contact'
 import { ProjectsScreen } from '../Projects'
 import { Home } from './Home'
 
-export const HomeScreen = () => {
+export const HomeScreen = ({}) => {
+
   return (
     <Container>
       <Home/>

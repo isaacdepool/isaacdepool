@@ -4,7 +4,7 @@ import { ContactTable } from './components/ContactTable'
 
 export const Contact = () => {
   return (
-    <Content>
+    <Content id="contact">
       <ContactTable/>
     </Content>
   )

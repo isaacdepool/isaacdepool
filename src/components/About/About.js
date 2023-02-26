@@ -5,9 +5,9 @@ import { AboutTable } from './components/AboutTable';
 export const About = () => {
   return (
     <Content>
-        <div className='present'
+        <div  className='present'
         > 
-          <h1 className='color-white font-size-primary text-center pt-2'>Skills</h1>
+          <h1 id="about" className='color-white font-size-primary text-center pt-2'>Skills</h1>
           <AboutTable/>
       </div>
     </Content>

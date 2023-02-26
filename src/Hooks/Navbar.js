@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   CContainer,
   CNavbarNav,
@@ -12,9 +12,9 @@ import {
   CNavbarToggler,
   CCollapse,
 } from "@coreui/react";
+import * as Scroll from 'react-scroll';
+import {Link} from 'react-scroll';
 import styled from "styled-components";
-import logo from '../assets/avatar.png'
-import { useEffect } from "react";
 
 export default function Navbar({
 }) {
@@ -37,74 +37,81 @@ export default function Navbar({
     })
 
     return (
-            <div className="container-fluid h-100">
-              <div className="row h-100">
-                  <Aside className="col-12 p-0 fixed-top">
-                    <Nav expand="md" className={`${colorChange&& 'colorChange'} shadow navbar-dark py-2 align-items-start px-md-5`}>
-                      <CContainer fluid className="py-0 py-xl-2 px-0 px-lg-4">
-                        <div className="d-flex align-items-center mb-0 mb-lg-0">
-                          {/* <CNavbarBrand href="#" className="d-block pe-0 ps-lg-0 me-1 logo">
-                            <img
-                              src={logo}
-                              alt="avatar"
-                              height="100%"
-                              width="100%"
-                            />
-                          </CNavbarBrand>    */}
-                            <h3 className="m-2 logo">ISAAC DEPOOL</h3>
-                        </div>
-
-                      <div className="px-3 my-2 mb-lg-0">
-                      <CNavbarToggler 
-                        className="p-2 p-lg-0 shadow-none" 
-                        onClick={() => setVisible(!visible)} 
+      <div className="container-fluid h-100">
+        <div className="row h-100">
+            <Aside className="col-12 p-0 fixed-top">
+              <Nav expand="md" className={`${colorChange&& 'colorChange'} shadow navbar-dark py-2 align-items-start px-md-5`}>
+                <CContainer fluid className="py-0 py-xl-2 px-0 px-lg-4">
+                  <div className="d-flex align-items-center mb-0 mb-lg-0">
+                    {/* <CNavbarBrand href="#" className="d-block pe-0 ps-lg-0 me-1 logo">
+                      <img
+                        src={logo}
+                        alt="avatar"
+                        height="100%"
+                        width="100%"
                       />
-                      </div>
-                      <CCollapse className="navbar-collapse" visible={visible}>
-                        <CNavbarNav className="my-0 ms-auto bg-nav-blue">
-                              <CNavLink 
-                                className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                                href={() => false}
-                                onClick={() => {
-                                  setVisible(false)
-                                }}
-                              >
-                                Home
-                              </CNavLink>
-                              <CNavLink 
-                                className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                                href={() => false}
-                                onClick={() => {
-                                  setVisible(false)
-                                }}
-                              >
-                                About
-                              </CNavLink>
-                              <CNavLink 
-                                className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                                href={() => false}
-                                onClick={() => {
-                                  setVisible(false)
-                                }}
-                              >
-                                Projects
-                              </CNavLink>
-                              <CNavLink 
-                                className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                                href={() => false}
-                                onClick={() => {
-                                  setVisible(false)
-                                }}
-                              >
-                                Contact
-                              </CNavLink>
-                        </CNavbarNav>
-                      </CCollapse>
-                      </CContainer>    
-                    </Nav>
-                  </Aside>
-              </div>
-            </div>
+                    </CNavbarBrand>    */}
+                      <h3 className="m-2 logo">ISAAC DEPOOL</h3>
+                  </div>
+
+                <div className="px-3 my-2 mb-lg-0">
+                <CNavbarToggler 
+                  className="p-2 p-lg-0 shadow-none" 
+                  onClick={() => setVisible(!visible)} 
+                />
+                </div>
+                <CCollapse className="navbar-collapse" visible={visible}>
+                  <CNavbarNav className="my-0 ms-auto bg-nav-blue">
+                        <CNavLink 
+                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
+                        >
+                          <Link activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={200} onClick={() => {
+                            setVisible(false)
+                          }}
+                          >
+                            About
+                          </Link>
+                        </CNavLink>
+                        <CNavLink 
+                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
+                          href={() => false}
+                        >
+                          <Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={200} onClick={() => {
+                            setVisible(false)
+                          }}
+                          >
+                            Skills
+                          </Link>
+                        </CNavLink>
+                        <CNavLink 
+                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
+                          href={() => false}
+                        >
+                          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={200} onClick={() => {
+                            setVisible(false)
+                          }}
+                          >
+                            Projects
+                          </Link>
+                        </CNavLink>
+                        <CNavLink 
+                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
+                          href={() => false}
+                        >
+                          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={200} onClick={() => {
+                            setVisible(false)
+                          }}
+                          >
+                            Contact
+                          </Link>
+                        </CNavLink>
+                  </CNavbarNav>
+                </CCollapse>
+                </CContainer>    
+              </Nav>
+            </Aside>
+        </div>
+      </div>
     );
 }
 
@@ -149,6 +156,18 @@ const Aside = styled.div`
       }
     }
   }
+
+  .active{
+      color: unset;
+      text-decoration: none;
+      filter: drop-shadow(1px -3px 2px #DE023F);
+      @media (max-width: 767px) {
+        color: white;
+        filter: unset;
+        border-bottom: none;
+      }
+  }
+
   .text-color2{
     // color: var(--primary-color) !important;
     @media (max-width: 991px) {
@@ -167,6 +186,17 @@ const Aside = styled.div`
         }
       }
     }
+
+    .active{
+      color: unset;
+      text-decoration: none;
+      filter: drop-shadow(1px -3px 2px #DE023F);
+      @media (max-width: 767px) {
+        color: white;
+        // background-color: #BEB083; 
+        border-bottom: none;
+      }
+  }
   }
 
   @keyframes changeColour {
