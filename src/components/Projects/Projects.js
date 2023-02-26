@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Projects = () => {
+export const Projects = ({data}) => {
   return (
     <Content>
         <div>Projects</div>
+        <div>{data?.name}</div>
     </Content>
   )
 }

@@ -1,22 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import { About } from '../About/About'
-import { Contact } from '../Contact/Contact'
-import { Projects } from '../Projects/Projects'
+import { AboutScreen } from '../About'
+import { ContactScreen } from '../Contact'
+import { ProjectsScreen } from '../Projects'
 import { Home } from './Home'
 
 export const HomeScreen = () => {
   return (
     <Container>
       <Home/>
-      <About/>
-      <Projects/>
-      <Contact/>
+      <AboutScreen/>
+      <ProjectsScreen/>
+      <ContactScreen/>
     </Container>
   )
 }
 
 const Container = styled.div`
-  margin: 60px auto;
+  margin: 0px auto;
   margin-bottom: 0;
 `

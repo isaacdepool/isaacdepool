@@ -13,26 +13,45 @@ import {
   CCollapse,
 } from "@coreui/react";
 import styled from "styled-components";
+import logo from '../assets/avatar.png'
+import { useEffect } from "react";
 
 export default function Navbar({
 }) {
     const [visible, setVisible] = useState(false);
 
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () =>{
+      if(window.scrollY >= 80){
+        setColorchange(true);
+      }
+      else{
+        setColorchange(false);
+      }
+    };
+
+    useEffect(() => {
+      changeNavbarColor()
+      // adding the event when scroll change Logo
+      window.addEventListener("scroll", changeNavbarColor)
+    })
+
     return (
             <div className="container-fluid h-100">
               <div className="row h-100">
                   <Aside className="col-12 p-0 fixed-top">
-                    <Nav expand="md" className="shadow navbar-dark py-2 align-items-start px-md-5">
+                    <Nav expand="md" className={`${colorChange&& 'colorChange'} shadow navbar-dark py-2 align-items-start px-md-5`}>
                       <CContainer fluid className="py-0 py-xl-2 px-0 px-lg-4">
                         <div className="d-flex align-items-center mb-0 mb-lg-0">
-                          <CNavbarBrand href="#" className="d-block pe-0 ps-4 ps-lg-0">
+                          {/* <CNavbarBrand href="#" className="d-block pe-0 ps-lg-0 me-1 logo">
                             <img
-                              src={''}
-                              alt="logo"
-                              height="17px"
+                              src={logo}
+                              alt="avatar"
+                              height="100%"
+                              width="100%"
                             />
-                          </CNavbarBrand>   
-                            <h5 className="mt-2">ISAAC DEPOOL</h5>
+                          </CNavbarBrand>    */}
+                            <h3 className="m-2 logo">ISAAC DEPOOL</h3>
                         </div>
 
                       <div className="px-3 my-2 mb-lg-0">
@@ -90,7 +109,7 @@ export default function Navbar({
 }
 
 const Aside = styled.div`
-  background-color: #f1faee;
+  background-color: transparent;
   .text-color-p{
     font-size: var(--font-size);
     color: white !important;
@@ -122,6 +141,7 @@ const Aside = styled.div`
   .nav-hover{
     :hover, :focus{
       border-bottom: 3px solid #BEB083;
+      filter: drop-shadow(1px -3px 2px #DE023F);
       @media (max-width: 767px) {
         color: white;
         background-color: #BEB083; 
@@ -135,12 +155,56 @@ const Aside = styled.div`
       color: white !important;
     }
   }
+  .colorChange{
+    animation: changeColour .5s;
+    background-color: var(--even-color);
+
+    .nav-hover{
+      :hover, :focus{
+        filter: drop-shadow(1px -3px 2px #1E1F20);
+        @media (max-width: 767px) {
+          filter: unset;
+        }
+      }
+    }
+  }
+
+  @keyframes changeColour {
+    0%,
+    15% {
+  background-color: #2b000c;
+    }
+    16%,
+    30% {
+  background-color: #510017;
+    }
+    31%,
+    45% {
+  background-color: #860127;
+    }
+    46%,
+    60% {
+  background-color: #9e022e;
+    }
+    61%,
+    75% {
+  background-color: #bf0338;
+    }
+    76%,
+    90% {
+  background-color: #d4043f;
+    }
+    91%,
+    100% {
+  background-color: var(--even-color);
+    }
+  }
 `
 const Nav = styled(CNavbar)`
-  background-color: var(--even-color);
   z-index: 1030;
   font-size: var(--font-size);
   color:white;
+  
   .link-nav{
     display:inline-flex;
     align-items: center;
@@ -149,5 +213,9 @@ const Nav = styled(CNavbar)`
     @media (max-width: 991px) {
       // background-color: var(--primary-color); 
     }
+  }
+
+  .logo{
+    filter: drop-shadow(1px -3px 2px #DE023F);
   }
 `

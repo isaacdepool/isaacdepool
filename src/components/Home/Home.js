@@ -2,20 +2,27 @@ import React from 'react'
 import '../../style.css';
 import styled from 'styled-components';
 
-import bgSVG from '../../assets/home/bg-home.svg';
+import avatarAnimated from '../../assets/avatar-hi.gif';
 
 export const Home = () => {
   return (
     <Content>
       <div className='present'
-      // style={{ backgroundImage: `url(${bgSVG})`}}
-      >   
-        <h1 className='text-center fw-bold font-size-primary color-white'>HELLO, I'M ISAAC DEPOOL</h1>
-        <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Computer Engineer specialized in the FrontEnd in Web and Mobile development.</h2>
-
-        <div className='text-center cursor-pointer'>
-          <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
+      >  
+      <dvi className="content-title">
+        <div className='p-relative'>
+          <img
+          className='avatar'
+          src={avatarAnimated}
+          /> 
+          <h1 className='text-center fw-bold font-size-primary color-white'>HELLO, I'M ISAAC DEPOOL</h1>
         </div>
+          <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Computer Engineer specialized in the FrontEnd in Web and Mobile development.</h2>
+
+          <div className='text-center cursor-pointer'>
+            <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
+          </div>
+      </dvi>
       </div>
     </Content>
   )
@@ -33,12 +40,30 @@ const Content = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
- },
+ }
+
+ content-title{
+  position: relative;
+ }
+
+ .avatar{
+  width: 25vw;
+  height: 25vw;
+  left: 0%;
+  position: absolute;
+  filter: drop-shadow(1px 1px 2px #fff);
+ }
  
 @media only screen and (max-width: 545px){
   
   .present{
-    padding: 0 15rem;
-   },
+    padding: 0 10rem;
+   }  
+
+   .avatar{
+    width: 100px;
+    height: 100px;
+    left: 0;
+   }
 }
 `
