@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/isaacdepool/static/css/main.73bf369e.css",
-    "main.js": "/isaacdepool/static/js/main.9d46892f.js",
-    "static/js/27.33043d91.chunk.js": "/isaacdepool/static/js/27.33043d91.chunk.js",
+    "main.css": "/isaacdepool/static/css/main.c7c7bc72.css",
+    "main.js": "/isaacdepool/static/js/main.dd30d96e.js",
+    "static/js/27.c4a4c520.chunk.js": "/isaacdepool/static/js/27.c4a4c520.chunk.js",
     "static/media/avatar-hi.gif": "/isaacdepool/static/media/avatar-hi.8cfd020add6d7bea7071.gif",
-    "static/media/avatar.png": "/isaacdepool/static/media/avatar.f8365200c74f44af11c6.png",
     "static/media/comillas.png": "/isaacdepool/static/media/comillas.bdbdb9d8e806cf68481c.png",
     "static/media/react-native.svg": "/isaacdepool/static/media/react-native.a96de46657e8299049a9034095ceb8e1.svg",
     "static/media/logo.svg": "/isaacdepool/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
@@ -13,7 +12,7 @@
     "static/media/React-icon.svg": "/isaacdepool/static/media/React-icon.3a03708e42481565259f85329d20b695.svg"
   },
   "entrypoints": [
-    "static/css/main.73bf369e.css",
-    "static/js/main.9d46892f.js"
+    "static/css/main.c7c7bc72.css",
+    "static/js/main.dd30d96e.js"
   ]
 }
