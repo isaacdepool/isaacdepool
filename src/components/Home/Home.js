@@ -16,12 +16,12 @@ export const Home = () => {
           className='avatar'
           src={avatarAnimated}
           /> 
-          <h1 className='text-center fw-bold font-size-primary color-white'>HELLO, I'M ISAAC DEPOOL</h1>
+            <h1 className='text-center fw-bold font-size-primary color-white ml-1'>HELLO, I'M <span className='name'>ISAAC DEPOOL</span></h1>
         </div>
           <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Computer Engineer specialized in FrontEnd Web and Mobile development.</h2>
 
           <div className='text-center cursor-pointer'>
-          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={200}
+          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={200}
           >
             <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
           </Link>
@@ -46,9 +46,9 @@ const Content = styled.div`
   background-position: center;
  }
 
- content-title{
-  position: relative;
- }
+ .name{
+    filter: drop-shadow(1px -3px 2px #DE023F);
+  }
 
  .avatar{
   width: 25vw;

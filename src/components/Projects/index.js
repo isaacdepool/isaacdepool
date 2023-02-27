@@ -1,34 +1,40 @@
 import React, { useState } from 'react'
 import { Projects } from './Projects'
-import api from '../../api/api'
 import { useEffect } from 'react'
+import styled from 'styled-components'
+import useStateRef from 'react-usestateref'
 
 export const ProjectsScreen = () => {
 
-
-  const [data, setData] = useState(null);
+  const [projects, setProjects, projectsRef] = useStateRef([]);
 
   useEffect(() => {
     getData()
   }, [])
 
   const getData = () =>{
-    console.log('hola');
-    api.get('/berry/64').then((result) => {
+    let data= [
+          {
+              "id": "1",
+              "title": "Joseph",
+              "description": "20",
+              "img": 'avatar.png'
+          },
+        ]
 
-      console.log('results', result.data);
-      setData(result.data.firmness)
-      
-    }).catch((err) => {
-      console.log(err);
-    });
+    setProjects(data);
   }
 
   return (
-    <>
+    <Container>
         <Projects
-        data={data}
+        data={projectsRef.current}
         />
-    </>
+    </Container>
   )
 }
+
+const Container = styled.div`
+min-height: 100vh;
+background-color: #1E1F20;
+`

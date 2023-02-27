@@ -15,10 +15,18 @@ export const ContactTable = () => {
               </div>
               <div
               style={{marginTop: 100}}>
-                <h2>isaacdepool@gmail.com</h2>
-                <h2>WhatsApp</h2>
-                <h2>LinkedIn</h2>
-                <h2>Github</h2>
+                <h2 className='cursor-pointer filter'
+                onClick={() => window.open('mailto:isaacdepool@gmail.com?subject=&body=%20goes%20here')}
+                >isaacdepool@gmail.com</h2>
+                <h2 className='cursor-pointer filter'
+                onClick={() => window.open('https://wa.me/584127858188')}
+                >WhatsApp</h2>
+                <h2 className='cursor-pointer filter'
+                onClick={() => window.open('https://www.linkedin.com/in/isaac-depool/')}
+                >LinkedIn</h2>
+                <h2 className='cursor-pointer filter'
+                onClick={() => window.open('https://github.com/isaacdepool')}
+                >Github</h2>
               </div>
             </div>
             <div class="item2 color-white position-relative ps-5">
@@ -70,6 +78,10 @@ const Content = styled.div`
 
 .contact{
   padding-right: 100px;
+}
+
+.filter:hover{
+  filter: drop-shadow(1px -3px 2px #DE023F);
 }
 
 .grid-container {
@@ -154,6 +166,7 @@ const Content = styled.div`
   .contact{
     padding-right: 0;
   }
+
 }
 
 `
