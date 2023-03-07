@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ProjectsTable } from './components/ProjectsTable'
 
-export const Projects = ({data}) => {
-  console.log('hola',data);
+export const Projects = ({data, handleSelectProject}) => {
   return (
     <Content>
       <div  className='present pb-5'> 
@@ -13,6 +12,7 @@ export const Projects = ({data}) => {
           (data.length > 0)
           ?
           <ProjectsTable
+          handleSelectProject={handleSelectProject}
           data={data}
           />
           :

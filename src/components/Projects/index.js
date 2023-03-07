@@ -3,10 +3,13 @@ import { Projects } from './Projects'
 import { useEffect } from 'react'
 import styled from 'styled-components'
 import useStateRef from 'react-usestateref'
+import { ModalProject } from './components/ModalProject'
 
 export const ProjectsScreen = () => {
 
   const [projects, setProjects, projectsRef] = useStateRef([]);
+  const [project, setProject, projectRef] = useStateRef([]);
+  const [showModal, setShowModal, showModalRef] = useStateRef(false);
 
   useEffect(() => {
     getData()
@@ -16,20 +19,74 @@ export const ProjectsScreen = () => {
     let data= [
           {
               "id": "1",
-              "title": "Joseph",
-              "description": "20",
-              "img": 'avatar.png'
+              "title": "Depool Cinema",
+              "description": "Depool-Cinema is a system for purchasing movie tickets.",
+              "metaData": '#Angular #CSS #TypeScript #NodeJs #MySql',
+              "links": [
+                {
+                  "title":"Back-End",
+                  "link":"https://github.com/isaacdepool/depoolcinema",
+                },
+                {
+                  "title":"Front-End",
+                  "link":"https://github.com/isaacdepool/cinemaApp",
+                }
+              ]
+          },
+          {
+            "id": "2",
+            "title": "Pocket University",
+            "description": "Mobile app for student life management, such as taking notes, photos, adding schedules, finances, etc.",
+            "metaData": '#Ionic #TypeScript #SqlLite',
+            "links": [
+              {
+                "title":"GitHub",
+                "link":"https://github.com/isaacdepool/pocketUniversity",
+              }
+            ]
+          },
+          {
+            "id": "3",
+            "title": "GifExpertApp",
+            "description": "Gifs search website.",
+            "metaData": '#React #CSS #JS #ApisRest',
+            "links": [
+              {
+                "title":"GitHub",
+                "link":"https://github.com/isaacdepool/gifExpertApp",
+              },
+              {
+                "title":"Web",
+                "link":"https://isaacdepool.github.io/gifExpertApp/",
+              }
+            ]
           },
         ]
 
     setProjects(data);
   }
+  
+
+  const handleSelectProject = (project) =>{
+    console.log(project);
+    setProject(project);
+    setShowModal(true);
+  }
 
   return (
     <Container>
-        <Projects
-        data={projectsRef.current}
-        />
+      {
+        (projectRef.current)&&
+          <ModalProject 
+          data={projectRef.current}
+          show={showModalRef.current}
+          setShowModal={setShowModal}
+          />
+        }
+          <Projects
+          data={projectsRef.current}
+          handleSelectProject={handleSelectProject}
+          />
     </Container>
   )
 }

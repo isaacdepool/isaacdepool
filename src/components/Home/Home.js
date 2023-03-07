@@ -18,7 +18,7 @@ export const Home = () => {
           /> 
             <h1 className='text-center fw-bold font-size-primary color-white ml-1'>HELLO, I'M <span className='name'>ISAAC DEPOOL</span></h1>
         </div>
-          <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A Computer Engineer specialized in FrontEnd Web and Mobile development.</h2>
+          <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A system Engineer specialized in FrontEnd Web and Mobile development.</h2>
 
           <div className='text-center cursor-pointer'>
           <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={200}

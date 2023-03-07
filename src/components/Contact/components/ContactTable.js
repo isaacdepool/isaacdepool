@@ -2,6 +2,7 @@ import { CCol, CRow } from '@coreui/react'
 import React from 'react'
 import styled from 'styled-components'
 import coimllasImg from '../../../assets/contact/comillas.png';
+import Arturo from '../../../assets/contact/arturo.jfif';
 
 export const ContactTable = () => {
   return (
@@ -38,15 +39,17 @@ export const ContactTable = () => {
                   />
                   <img
                     className='img'
-                    src={'https://pixlr.com/images/index/remove-bg.webp'}
-                    alt="React"
+                    src={Arturo}
+                    alt="Arturo"
                   />
               </div>
               <div className='mt-5'>
-                <h3 className='font-size-14 opacity-75'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</h3>
+                <h3 className='font-size-14 opacity-75'>Tuve la oportunidad de ser el capacitador de Isaac cuando entro a SysModelers y trabajar junto a el y puedo decir que es una persona proactiva y apasionada por el desarrollo móvil, es un excelente programador que se enfocado en solucionar los problemas de la manera mas optima.</h3>
 
-                <h4 className='mb-0 font-size-15 mt-3'>- Isaac Depool</h4>
-                <h4 className='mb-0 font-size-13 opacity-75'>CEO & Founder</h4>
+                <h4 className='mb-0 font-size-15 mt-3 cursor-pointer letter'
+                onClick={() => window.open('https://www.linkedin.com/in/arturo-smr/')}
+                >- ING. Arturo Miranda</h4>
+                <h4 className='mb-0 font-size-13 opacity-75'>Senior Frontend Developer.</h4>
               </div>
             </div>
             <div class="item3 color-white position-relative ps-5">
@@ -65,7 +68,7 @@ export const ContactTable = () => {
                 <div className='mt-5 '>
                   <h3 className='font-size-14 opacity-75'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</h3>
 
-                  <h4 className='mb-0 font-size-15 mt-3'>- Isaac Depool</h4>
+                  <h4 className='mb-0 font-size-15 mt-3 letter cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/arturo-smr/')}>- Isaac Depool</h4>
                   <h4 className='mb-0 font-size-13 opacity-75'>CEO & Founder</h4>
                 </div>
             </div>
@@ -78,6 +81,10 @@ const Content = styled.div`
 
 .contact{
   padding-right: 100px;
+}
+
+.letter:hover{
+  color:#333
 }
 
 .filter:hover{

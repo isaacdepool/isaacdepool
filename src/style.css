@@ -6,6 +6,10 @@
     color: #000 !important
 }
 
+.color-red{
+    color: #DE023F !important
+}
+
 /* BackGround  */
 .bg-red{
     background-color: #DE023F !important;

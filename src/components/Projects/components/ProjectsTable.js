@@ -1,9 +1,12 @@
 import { CCard, CCardBody, CCol, CRow } from '@coreui/react'
 import React from 'react'
 import styled from 'styled-components'
-import DepoolCinema from '../../../assets/avatar.png'
 
-export const ProjectsTable = ({data}) => {
+import DepoolCinema from '../../../assets/projects/depool-cinema.PNG'
+import Pocket from '../../../assets/projects/Pocket.jpg'
+import Gif from '../../../assets/projects/Gif.PNG'
+
+export const ProjectsTable = ({data, handleSelectProject}) => {
   return (
     <Content>
         <CRow className='d-flex justify-content-center mx-md-3 mx-3 p-box'>
@@ -13,8 +16,9 @@ export const ProjectsTable = ({data}) => {
                 <CCol md={6} lg={3} key={i}>
                     <CCard className='project m-2 cursor-pointer'
                     style={{ 
-                        backgroundImage: `url(${e.title== 'Joseph'&&DepoolCinema})`
+                        backgroundImage: `url(${e.id== 1&&DepoolCinema || e.id== 2&&Pocket || e.id== 3&&Gif})`
                       }}
+                      onClick={() => handleSelectProject(e)}
                     >
                         <CCardBody className='descrip'>
                             <h2 className='color-white'>{e.title}</h2>
@@ -35,6 +39,7 @@ margin-top: 100px;
     background-color: transparent;
     height: 300px;
     background-size: cover;
+    // background-position: center;
     position: relative;
 }
 
