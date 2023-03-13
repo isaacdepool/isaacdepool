@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/isaacdepool/static/css/main.99f1d6ef.css",
-    "main.js": "/isaacdepool/static/js/main.2a419e00.js",
+    "main.js": "/isaacdepool/static/js/main.e763bb57.js",
     "static/js/27.33043d91.chunk.js": "/isaacdepool/static/js/27.33043d91.chunk.js",
     "static/media/depool-cinema.PNG": "/isaacdepool/static/media/depool-cinema.90c6d60f0a85fb4ecfbc.PNG",
     "static/media/avatar-hi.gif": "/isaacdepool/static/media/avatar-hi.8cfd020add6d7bea7071.gif",
     "static/media/Gif.PNG": "/isaacdepool/static/media/Gif.7485c77182e3338327fa.PNG",
     "static/media/Pocket.jpg": "/isaacdepool/static/media/Pocket.198657ee67c31ee1fe5d.jpg",
+    "static/media/Frink.jpg": "/isaacdepool/static/media/Frink.68a36b9f979ef847ae6c.jpg",
+    "static/media/daniel.jfif": "/isaacdepool/static/media/daniel.5dd70ce3a8cc8fc2f485.jfif",
     "static/media/arturo.jfif": "/isaacdepool/static/media/arturo.12a80d64b6bbc8a06bc1.jfif",
     "static/media/comillas.png": "/isaacdepool/static/media/comillas.bdbdb9d8e806cf68481c.png",
     "static/media/react-native.svg": "/isaacdepool/static/media/react-native.a96de46657e8299049a9034095ceb8e1.svg",
@@ -19,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.99f1d6ef.css",
-    "static/js/main.2a419e00.js"
+    "static/js/main.e763bb57.js"
   ]
 }
