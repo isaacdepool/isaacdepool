@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import DepoolCinema from '../../../assets/projects/depool-cinema.PNG'
 import Pocket from '../../../assets/projects/Pocket.jpg'
 import Gif from '../../../assets/projects/Gif.PNG'
+import Frink from '../../../assets/projects/Frink.jpg'
 
 export const ProjectsTable = ({data, handleSelectProject}) => {
   return (
@@ -13,10 +14,10 @@ export const ProjectsTable = ({data, handleSelectProject}) => {
             {
             data.map((e, i)=>(
 
-                <CCol md={6} lg={3} key={i}>
+                <CCol md={6} lg={4} key={i}>
                     <CCard className='project m-2 cursor-pointer'
                     style={{ 
-                        backgroundImage: `url(${e.id== 1&&DepoolCinema || e.id== 2&&Pocket || e.id== 3&&Gif})`
+                        backgroundImage: `url(${e.id== 1&&DepoolCinema || e.id== 2&&Pocket || e.id== 3&&Gif || e.id== 4&&Frink})`
                       }}
                       onClick={() => handleSelectProject(e)}
                     >

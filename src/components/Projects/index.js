@@ -61,6 +61,18 @@ export const ProjectsScreen = () => {
               }
             ]
           },
+          {
+            "id": "4",
+            "title": "FRINK",
+            "description": "App to play and drink with friends.",
+            "metaData": '#React Native #CSS #JS',
+            "links": [
+              {
+                "title":"GitHub",
+                "link":"https://github.com/isaacdepool/frink",
+              },
+            ]
+          },
         ]
 
     setProjects(data);

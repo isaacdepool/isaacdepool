@@ -10,6 +10,7 @@ import closeIcon from '../../../assets/projects/Icon close.svg'
 import DepoolCinema from '../../../assets/projects/depool-cinema.PNG'
 import Pocket from '../../../assets/projects/Pocket.jpg'
 import Gif from '../../../assets/projects/Gif.PNG'
+import Frink from '../../../assets/projects/Frink.jpg'
 
 export const ModalProject = ({data, show, setShowModal}) => {
   return (
@@ -26,14 +27,14 @@ export const ModalProject = ({data, show, setShowModal}) => {
                 <CCol xs={6} className='pe-0'>
                     <div className='box'
                     style={{ 
-                        backgroundImage: `url(${data.id== 1&&DepoolCinema || data.id== 2&&Pocket || data.id== 3&&Gif})`
+                        backgroundImage: `url(${data.id== 1&&DepoolCinema || data.id== 2&&Pocket || data.id== 3&&Gif || data.id== 4&&Frink})`
                       }}>
                     </div>
 
                 </CCol>
                 <CCol xs={6} className='ps-0'>
                     <div className='content'>
-                        <div className='mx-3 pt-2'>
+                        <div className='mx-3 py-2'>
                             <div className='d-flex justify-content-end my-2 cursor-pointer'
                             onClick={() => setShowModal(false)}
                             >
@@ -50,7 +51,7 @@ export const ModalProject = ({data, show, setShowModal}) => {
                         </div>
 
 
-                        <div className='box-link ps-1 d-flex flex-nowrap'>
+                        <div className='box-link ps-3 d-flex flex-nowrap pb-2'>
                             {
                                 data?.links?.map((item,i) =>(
 

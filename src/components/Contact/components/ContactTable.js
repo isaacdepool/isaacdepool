@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import coimllasImg from '../../../assets/contact/comillas.png';
 import Arturo from '../../../assets/contact/arturo.jfif';
+import Daniel from '../../../assets/contact/daniel.jfif';
 
 export const ContactTable = () => {
   return (
@@ -61,15 +62,15 @@ export const ContactTable = () => {
                     />
                     <img
                       className='img'
-                      src={'https://pixlr.com/images/index/remove-bg.webp'}
+                      src={Daniel}
                       alt="React"
                     />
                 </div>
                 <div className='mt-5 '>
-                  <h3 className='font-size-14 opacity-75'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</h3>
+                  <h3 className='font-size-14 opacity-75'>Isaac y yo tuvimos la oportunidad de trabajar juntos en Sysmodelers en donde fui su jefe. Puedo confirmar que es un excelente programador amante al desarrollo móvil y web que le apasiona tomar retos al momento de desarrollar o aprender cosas nuevas. Es una persona proactiva, colaborativa y responsable.</h3>
 
-                  <h4 className='mb-0 font-size-15 mt-3 letter cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/arturo-smr/')}>- Isaac Depool</h4>
-                  <h4 className='mb-0 font-size-13 opacity-75'>CEO & Founder</h4>
+                  <h4 className='mb-0 font-size-15 mt-3 letter cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/daniel-quintero-197741201/')}>- Daniel Quintero</h4>
+                  <h4 className='mb-0 font-size-13 opacity-75'>Senior Frontend Developer - Ex-coordinator.</h4>
                 </div>
             </div>
         </div>
