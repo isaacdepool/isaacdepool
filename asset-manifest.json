@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/isaacdepool/static/css/main.1e9a30d2.css",
-    "main.js": "/isaacdepool/static/js/main.7c94ef44.js",
+    "main.js": "/isaacdepool/static/js/main.3b8c592c.js",
     "static/js/27.c4a4c520.chunk.js": "/isaacdepool/static/js/27.c4a4c520.chunk.js",
     "static/media/depool-cinema.PNG": "/isaacdepool/static/media/depool-cinema.90c6d60f0a85fb4ecfbc.PNG",
     "static/media/avatar-hi.gif": "/isaacdepool/static/media/avatar-hi.8cfd020add6d7bea7071.gif",
@@ -21,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.1e9a30d2.css",
-    "static/js/main.7c94ef44.js"
+    "static/js/main.3b8c592c.js"
   ]
 }
