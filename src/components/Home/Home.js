@@ -23,6 +23,7 @@ export const Home = () => {
                 inViewport&&
                 <div className='position-absolute start-0'>
                   <img
+                  onClick={() => window.open('https://drive.google.com/file/d/12FeW7Sm7vPIA0GF7YKHonS0sna0YURqr/view?usp=sharing')}
                   className={`avatar cursor-pointer ${animate_backInLeft}`}
                   src={avatarAnimated}
                   /> 
