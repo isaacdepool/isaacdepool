@@ -2,14 +2,38 @@ import React from 'react'
 import styled from 'styled-components';
 import { AboutTable } from './components/AboutTable';
 
+import handleViewport from 'react-in-viewport';
+
 export const About = () => {
+  const Block = (props) => {
+    const { inViewport, forwardedRef } = props;
+    const circle = inViewport ? 'circle' : 'Not in viewport';
+    const circle_infinite = inViewport ? 'circle-infinte' : 'Not in viewport';
+    const animate_backInLeft = inViewport ? 'animate__animated animate__backInLeft' : 'Not in viewport';
+    const animate__bounce = inViewport ? 'animate__animated animate__bounce' : 'Not in viewport';
+  
+    return(
+      <div  className='present' ref={forwardedRef}
+        > 
+            <>
+              <h1 className='color-white font-size-primary text-center pt-2'>Skills</h1>
+              <AboutTable
+              circle={circle}
+              circle_infinite={circle_infinite}
+              />
+            </>
+      </div>
+    )
+  };
+  
+  const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
   return (
     <Content>
-        <div  className='present'
-        > 
-          <h1 id="about" className='color-white font-size-primary text-center pt-2'>Skills</h1>
-          <AboutTable/>
-      </div>
+      <ViewportBlock 
+      onEnterViewport={() => console.log('enter')} 
+      onLeaveViewport={() => console.log('leave')} 
+      />
+        
     </Content>
   )
 }

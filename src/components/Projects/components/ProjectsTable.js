@@ -7,7 +7,7 @@ import Pocket from '../../../assets/projects/Pocket.jpg'
 import Gif from '../../../assets/projects/Gif.PNG'
 import Frink from '../../../assets/projects/Frink.jpg'
 
-export const ProjectsTable = ({data, handleSelectProject}) => {
+export const ProjectsTable = ({data, handleSelectProject, animate__bounceIn}) => {
   return (
     <Content>
         <CRow className='d-flex justify-content-center mx-md-3 mx-3 p-box'>
@@ -15,7 +15,7 @@ export const ProjectsTable = ({data, handleSelectProject}) => {
             data.map((e, i)=>(
 
                 <CCol md={6} lg={4} key={i}>
-                    <CCard className='project m-2 cursor-pointer'
+                    <CCard className={`project m-2 cursor-pointer ${animate__bounceIn}`}
                     style={{ 
                         backgroundImage: `url(${e.id== 1&&DepoolCinema || e.id== 2&&Pocket || e.id== 3&&Gif || e.id== 4&&Frink})`
                       }}

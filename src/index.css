@@ -26,6 +26,14 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.font-size-6 {
+  font-size: 6pt !important;
+}
+
+.font-size-8 {
+  font-size: 8pt !important;
+}
+
 .font-size-10 {
   font-size: 10pt !important;
 }

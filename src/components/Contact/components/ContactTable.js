@@ -31,8 +31,8 @@ export const ContactTable = () => {
                 >Github</h2>
               </div>
             </div>
-            <div class="item2 color-white position-relative ps-5">
-              <div className='text-end'>
+            <div class="item2 color-white ps-5">
+              <div className='text-end d-flex justify-content-between'>
                   <img
                     className='img-comillas'
                     src={coimllasImg}
@@ -54,7 +54,7 @@ export const ContactTable = () => {
               </div>
             </div>
             <div class="item3 color-white position-relative ps-5">
-              <div className='text-end'>
+              <div className='text-end d-flex justify-content-between'>
                     <img
                       className='img-comillas'
                       src={coimllasImg}
@@ -128,12 +128,16 @@ const Content = styled.div`
 }
 
 .img-comillas{
-  position: absolute;
-  left: 25rem;
-  top: 35rem;
+  height: 35rem;
+  width: 40rem;
   opacity: 0.65;
   zoom: 0.1;
   rotate: 180deg;
+}
+
+.item2, .item3{
+  display: grid;
+  align-content: center;
 }
 
 @media screen and (max-width: 1400px){

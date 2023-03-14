@@ -21,7 +21,7 @@ export const ProjectsScreen = () => {
               "id": "1",
               "title": "Depool Cinema",
               "description": "Depool-Cinema is a system for purchasing movie tickets.",
-              "metaData": '#Angular #CSS #TypeScript #NodeJs #MySql',
+              "metaData": '#Angular #CSS #bootstrap #TypeScript #NodeJs #MySql',
               "links": [
                 {
                   "title":"Back-End",
@@ -78,9 +78,7 @@ export const ProjectsScreen = () => {
     setProjects(data);
   }
   
-
   const handleSelectProject = (project) =>{
-    console.log(project);
     setProject(project);
     setShowModal(true);
   }
@@ -97,6 +95,7 @@ export const ProjectsScreen = () => {
         }
           <Projects
           data={projectsRef.current}
+          noAnimation={!showModalRef.current}
           handleSelectProject={handleSelectProject}
           />
     </Container>

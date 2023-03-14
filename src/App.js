@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Hooks/Navbar';
 import { HomeScreen } from './components/Home';
+import 'animate.css';
 
 function App() {
   return (

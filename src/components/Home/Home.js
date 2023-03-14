@@ -2,32 +2,54 @@ import React from 'react'
 import '../../style.css';
 import styled from 'styled-components';
 import {Link} from 'react-scroll'
+import handleViewport from 'react-in-viewport';
 
+// Gif 
 import avatarAnimated from '../../assets/avatar-hi.gif';
 
+
 export const Home = () => {
+  const Block = (props) => {
+    const { inViewport, forwardedRef } = props;
+    const animate_backInLeft = inViewport ? 'animate__animated animate__backInLeft' : 'Not in viewport';
+    const animate__bounce = inViewport ? 'animate__animated animate__bounce' : 'Not in viewport';
+  
+    return(
+      <div id="home" className='present' ref={forwardedRef}
+        >
+          <dvi className="content-title">
+            <div className='p-relative'>
+              {
+                inViewport&&
+                <div className='position-absolute start-0'>
+                  <img
+                  className={`avatar cursor-pointer ${animate_backInLeft}`}
+                  src={avatarAnimated}
+                  /> 
+                </div>
+              }
+                <h1 className='text-center fw-bold font-size-primary color-white ml-1'>HELLO, I'M <span className='name'>ISAAC DEPOOL</span></h1>
+            </div>
+              <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A system Engineer specialized in FrontEnd Web and Mobile development.</h2>
+    
+              <div className={`text-center cursor-pointer ${animate__bounce}`}>
+              <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={200}
+              >
+                <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
+              </Link>
+              </div>
+          </dvi>
+      </div>
+    )
+  };
+  
+  const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
   return (
     <Content>
-      <div id="home" className='present'
-      >  
-      <dvi className="content-title">
-        <div className='p-relative'>
-          <img
-          className='avatar'
-          src={avatarAnimated}
-          /> 
-            <h1 className='text-center fw-bold font-size-primary color-white ml-1'>HELLO, I'M <span className='name'>ISAAC DEPOOL</span></h1>
-        </div>
-          <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A system Engineer specialized in FrontEnd Web and Mobile development.</h2>
-
-          <div className='text-center cursor-pointer'>
-          <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={200}
-          >
-            <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
-          </Link>
-          </div>
-      </dvi>
-      </div>
+      <ViewportBlock 
+      // onEnterViewport={() => console.log('enter')} 
+      // onLeaveViewport={() => console.log('leave')} 
+      />
     </Content>
   )
 }
@@ -54,7 +76,7 @@ const Content = styled.div`
   width: 25vw;
   height: 25vw;
   left: 0%;
-  position: absolute;
+  // position: absolute;
   filter: drop-shadow(1px 1px 2px #fff);
  }
  

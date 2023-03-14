@@ -6,7 +6,8 @@ import reactIcon from '../../../assets/about/React-icon.svg'
 import moniIcon from '../../../assets/about/computer-tv-svgrepo-com.svg'
 import reactNativeIcon from '../../../assets/about/react-native.svg'
 
-export const AboutTable = () => {
+export const AboutTable = ({circle,
+    circle_infinite}) => {
   return (
     <Content>
         <CRow className='d-flex justify-content-center mx-md-3 mx-3 p-box'>
@@ -14,7 +15,7 @@ export const AboutTable = () => {
                 <div className='box'>
                     <div className='d-flex align-items-center'>
                         <img
-                            className='me-3 mt-0 d-flex cursor-pointer circle'
+                            className={`me-3 mt-0 d-flex cursor-pointer ${circle}`}
                             src={reactNativeIcon}
                             alt="React"
                             height="50px"
@@ -36,7 +37,7 @@ export const AboutTable = () => {
                 <div className='box'>
                     <div className='d-flex align-items-center'>
                         <img
-                            className='me-3 mt-0 d-flex cursor-pointer circle-infinte'
+                            className={`me-3 mt-0 d-flex cursor-pointer ${circle}`}
                             src={reactIcon}
                             alt="React"
                             height="50px"
