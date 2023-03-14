@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/isaacdepool/static/css/main.1e9a30d2.css",
-    "main.js": "/isaacdepool/static/js/main.3b8c592c.js",
+    "main.css": "/isaacdepool/static/css/main.56580400.css",
+    "main.js": "/isaacdepool/static/js/main.7bf1e2df.js",
     "static/js/27.c4a4c520.chunk.js": "/isaacdepool/static/js/27.c4a4c520.chunk.js",
     "static/media/depool-cinema.PNG": "/isaacdepool/static/media/depool-cinema.90c6d60f0a85fb4ecfbc.PNG",
     "static/media/avatar-hi.gif": "/isaacdepool/static/media/avatar-hi.8cfd020add6d7bea7071.gif",
@@ -20,7 +20,7 @@
     "static/media/Icon close.svg": "/isaacdepool/static/media/Icon close.4a6be3ffc51b3bf44f866294ee559fae.svg"
   },
   "entrypoints": [
-    "static/css/main.1e9a30d2.css",
-    "static/js/main.3b8c592c.js"
+    "static/css/main.56580400.css",
+    "static/js/main.7bf1e2df.js"
   ]
 }
