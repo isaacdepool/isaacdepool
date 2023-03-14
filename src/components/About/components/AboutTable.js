@@ -37,7 +37,7 @@ export const AboutTable = ({circle,
                 <div className='box'>
                     <div className='d-flex align-items-center'>
                         <img
-                            className={`me-3 mt-0 d-flex cursor-pointer ${circle}`}
+                            className={`me-3 mt-0 d-flex cursor-pointer ${circle_infinite}`}
                             src={reactIcon}
                             alt="React"
                             height="50px"

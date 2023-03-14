@@ -23,7 +23,7 @@ export const Home = () => {
                 inViewport&&
                 <div className='position-absolute start-0'>
                   <img
-                  onClick={() => window.open('https://drive.google.com/file/d/12FeW7Sm7vPIA0GF7YKHonS0sna0YURqr/view?usp=sharing')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1CpjCrh1gBCeRsrOgnEDNxAm-ZJCyfg01/view?usp=sharing')}
                   className={`avatar cursor-pointer ${animate_backInLeft}`}
                   src={avatarAnimated}
                   /> 
@@ -33,11 +33,18 @@ export const Home = () => {
             </div>
               <h2 className='text-center my-5 font-size-secondary color-white opacity-50'>A system Engineer specialized in FrontEnd Web and Mobile development.</h2>
     
-              <div className={`text-center cursor-pointer ${animate__bounce}`}>
-              <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={200}
-              >
-                <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
-              </Link>
+              <div className='d-md-flex justify-content-center'>
+                <div className={`me-md-1 text-center cursor-pointer ${animate__bounce}`}
+                onClick={() => window.open('https://drive.google.com/file/d/1CpjCrh1gBCeRsrOgnEDNxAm-ZJCyfg01/view?usp=sharing')}
+                >
+                  <h3 className='color-white btn-general bg-blue font-size-btn'>RESUME</h3>
+                </div>
+                <div className={`ms-md-1 text-center cursor-pointer ${animate__bounce}`}>
+                <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={200}
+                >
+                  <h3 className='color-white btn-general bg-red font-size-btn'>PROJECTS</h3>
+                </Link>
+                </div>
               </div>
           </dvi>
       </div>

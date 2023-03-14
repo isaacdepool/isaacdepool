@@ -15,6 +15,10 @@
     background-color: #DE023F !important;
 }
 
+.bg-blue{
+    background-color: #457b9d !important;
+}
+
 .btn-general{
     color: #333;
     text-transform: uppercase;

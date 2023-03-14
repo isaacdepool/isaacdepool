@@ -62,49 +62,30 @@ export default function Navbar({
                 </div>
                 <CCollapse className="navbar-collapse" visible={visible}>
                   <CNavbarNav className="my-0 ms-auto bg-nav-blue">
-                        {/* <CNavLink 
-                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                        > */}
                           <Link className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer text-decoration-none`} activeClass="active" to="home" spy={true} smooth={true} offset={-100} duration={200} onClick={() => {
                             setVisible(false)
                           }}
                           >
                             About
                           </Link>
-                        {/* </CNavLink> */}
-                        {/* <CNavLink 
-                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                          href={() => false}
-                        > */}
                           <Link className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer text-decoration-none`} activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={200} onClick={() => {
                             setVisible(false)
                           }}
                           >
                             Skills
                           </Link>
-                        {/* </CNavLink> */}
-                        {/* <CNavLink 
-                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                          href={() => false}
-                        > */}
                           <Link className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer text-decoration-none`} activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={200} onClick={() => {
                             setVisible(false)
                           }}
                           >
                             Projects
                           </Link>
-                        {/* </CNavLink> */}
-                        {/* <CNavLink 
-                          className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer`} 
-                          href={() => false}
-                        > */}
                           <Link className={`px-3 px-lg-2 text-color-p nav-hover link-nav mx-0 mx-lg-4 cursor-pointer text-decoration-none`} activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={200} onClick={() => {
                             setVisible(false)
                           }}
                           >
                             Contact
                           </Link>
-                        {/* </CNavLink> */}
                   </CNavbarNav>
                 </CCollapse>
                 </CContainer>    

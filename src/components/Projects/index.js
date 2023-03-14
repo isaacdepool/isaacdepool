@@ -37,7 +37,7 @@ export const ProjectsScreen = () => {
             "id": "2",
             "title": "Pocket University",
             "description": "Mobile app for student life management, such as taking notes, photos, adding schedules, finances, etc.",
-            "metaData": '#Ionic #TypeScript #SqlLite',
+            "metaData": '#Ionic #TypeScript #SqLite',
             "links": [
               {
                 "title":"GitHub",
@@ -64,7 +64,7 @@ export const ProjectsScreen = () => {
           {
             "id": "4",
             "title": "FRINK",
-            "description": "App to play and drink with friends.",
+            "description": "App mobile to play and drink with friends.",
             "metaData": '#React Native #CSS #JS',
             "links": [
               {
