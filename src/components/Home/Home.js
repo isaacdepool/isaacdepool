@@ -23,7 +23,7 @@ export const Home = () => {
                 inViewport&&
                 <div className='position-absolute start-0'>
                   <img
-                  onClick={() => window.open('https://drive.google.com/file/d/1CpjCrh1gBCeRsrOgnEDNxAm-ZJCyfg01/view?usp=sharing')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1f4TVZvIzGGjyYfrcKUExIz4nqxLPXYxy/view?usp=sharing')}
                   className={`avatar cursor-pointer ${animate_backInLeft}`}
                   src={avatarAnimated}
                   /> 
@@ -35,7 +35,7 @@ export const Home = () => {
     
               <div className='d-md-flex justify-content-center'>
                 <div className={`me-md-1 text-center cursor-pointer ${animate__bounce}`}
-                onClick={() => window.open('https://drive.google.com/file/d/1CpjCrh1gBCeRsrOgnEDNxAm-ZJCyfg01/view?usp=sharing')}
+                onClick={() => window.open('https://drive.google.com/file/d/1f4TVZvIzGGjyYfrcKUExIz4nqxLPXYxy/view?usp=sharing')}
                 >
                   <h3 className='color-white btn-general bg-blue font-size-btn'>RESUME</h3>
                 </div>
