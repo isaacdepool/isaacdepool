@@ -15,7 +15,7 @@
 ## 🧑🏻‍💻 Back-End 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=mysql,nodejs" />
+    <img src="https://skillicons.dev/icons?i=mysql,nodejs,mongodb" />
   </a>
 </div>
 
