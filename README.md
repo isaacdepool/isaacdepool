@@ -4,6 +4,7 @@
 - 🎓 I studied systems Engineer at the Rafael Belloso Chacin University.
 - 🌐 Web Developer.
 - 📱 Mobile Developer.
+- 💻 Backend Developer
 
 ## 🧑🏻‍💻Front-End
 <div align="center">
